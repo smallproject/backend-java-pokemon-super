@@ -42,6 +42,6 @@ public class Main {
         squirtle.setWeight(5);
         squirtle.setAccuracy(2);
 
-        bulbasaur.speaks();
+        squirtle.speaks();
     }
 }
