@@ -5,6 +5,12 @@ public class Squirtle extends WaterPokemon{
         super(healthPoint, experiencePoints);
     }
 
+
+    public Squirtle(double healthPoint, double experiencePoints, String name
+            , int level, double attack, double defence, double accuracy, double weight, double height) {
+        super(healthPoint, experiencePoints, name, level, attack, defence, accuracy, weight, height);
+
+    }
     @Override
     public void speaks() {
         System.out.println("Squirtle!");
@@ -12,6 +18,11 @@ public class Squirtle extends WaterPokemon{
 
     @Override
     public void eats(String food) {
+
+    }
+
+    @Override
+    public void attack() {
 
     }
 }

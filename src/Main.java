@@ -3,45 +3,27 @@ package src;
 public class Main {
     public static void main(String[] args) {
 
-        Pikachu pikachu = new Pikachu(100, 0);
-        pikachu.setName("Yellow");
-        pikachu.setLevel(1);
-        pikachu.setAttack(2);
-        pikachu.setDefence(1.5);
-        pikachu.setWeight(3);
-        pikachu.setAccuracy(4);
+        Pikachu pikachu = new Pikachu(100, 0, "Yellow",
+        1, 2, 1.5, 3, 4,3.2);
 
         pikachu.speaks();
+        pikachu.attack();
 
+        pikachu.getStats();
+    }
 
-        Bulbasaur bulbasaur = new Bulbasaur(100, 0);
-        bulbasaur.setName("Green");
-        bulbasaur.setLevel(1);
-        bulbasaur.setAttack(1.5);
-        bulbasaur.setDefence(1.5);
-        bulbasaur.setWeight(3);
-        bulbasaur.setAccuracy(3);
+    public static void temp() {
 
+        Bulbasaur bulbasaur = new Bulbasaur(100, 0, "Green",
+                1, 1.5, 1.5, 3, 3,3);
         bulbasaur.speaks();
 
-        Charmander charmander = new Charmander(100, 0);
-        charmander.setName("Red");
-        charmander.setLevel(1);
-        charmander.setAttack(3);
-        charmander.setDefence(1);
-        charmander.setWeight(4);
-        charmander.setAccuracy(2);
-
+        Charmander charmander = new Charmander(100, 0, "Red",
+                1, 3, 1, 2, 4,3.5);
         charmander.speaks();
 
-        Squirtle squirtle = new Squirtle(100, 0);
-        squirtle.setName("Blue");
-        squirtle.setLevel(1);
-        squirtle.setAttack(1);
-        squirtle.setDefence(3);
-        squirtle.setWeight(5);
-        squirtle.setAccuracy(2);
-
+        Squirtle squirtle = new Squirtle(100, 0, "Blue",
+                1, 1.5, 4, 2, 5,3.3);
         squirtle.speaks();
     }
 }

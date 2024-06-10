@@ -1,6 +1,6 @@
 package src;
 
-public abstract class Attribute {
+public abstract class Pokemon {
     private double healthPoint;
     private double experiencePoints;
 
@@ -16,7 +16,20 @@ public abstract class Attribute {
 
     public abstract void speaks();
     public abstract void eats(String food);
+    public abstract void attack();
 
+    public void getStats(){
+        System.out.println("Level: " + level);
+        System.out.println("Name: " + name);
+        System.out.println("Health Point: " + healthPoint);
+        System.out.println("Experience Points: " + experiencePoints);
+        System.out.println("Height: " + height);
+        System.out.println("Weight: " + weight);
+        System.out.println("Defence: " + defence);
+        System.out.println("Attack: " + attack);
+        System.out.println("Accuracy: " + accuracy);
+        System.out.println("Special: " + special);
+    }
     public void setExperiencePoints(double experiencePoints) {
         this.experiencePoints = experiencePoints;
     }
@@ -85,7 +98,7 @@ public abstract class Attribute {
         this.special = special;
     }
 
-    public Attribute(double healthPoint, double experiencePoints) {
+    public Pokemon(double healthPoint, double experiencePoints) {
         this.healthPoint = healthPoint;
         this.experiencePoints = experiencePoints;
     }
